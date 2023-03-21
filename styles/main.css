@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 html {
     background-image: url("../images/vhbackground.jpg");
     background-attachment: fixed;
@@ -20,12 +15,14 @@ body {
 header {
     background-image: url("../images/vhbackground.jpg");
     border-bottom: 3px ridge silver;
+    display: flex;
+    align-items: center;
 }
 #logoimage {
     float: left;
     max-width: 200px;
     width: 100%;
-    margin: 10px 2em;
+    margin: 2vh;
 }
 header h2 {
     font-size: 500%;
